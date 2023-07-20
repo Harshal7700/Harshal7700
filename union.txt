@@ -1,0 +1,63 @@
+union
+#include <stdio.h>
+
+union st
+{
+    int a;
+    float b;
+    char c;
+};
+void main()
+{
+    union st s;
+    s.a=10;
+    printf("%d",s.c);
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+#include <stdio.h>
+union ab {
+    int a;
+    int b;
+    char c;
+};
+int main() {
+    // Write C code here
+  union ab a;
+  union ab b;
+  a.a=10;
+  b.b=11;
+  printf("%d\n",a.a);
+  printf("%d\n",b.a);
+  printf("%d\n",b.b);
+  return 0;
+}
+/////////////////////////////////////////
+
+#include <stdio.h>
+union ab 
+{
+    int a;
+    int b;
+    char c;
+};
+int main() {
+    // Write C code here
+  union ab a;
+  union ab b;
+  union ab c;
+  a.a=10;
+  b.b=11;
+  c.c=12;
+  printf("%d\n",a.a);    //10
+  printf("%d\n",b.a);     //11
+  printf("%d\n",b.b);    //11
+  printf("%d\n",c.c);   //12
+  printf("%d\n",c.a);   //12
+  printf("%d\n",c.b);   //12
+  return 0;
+}
+
+//has context menu
+//Compose
